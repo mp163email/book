@@ -1,0 +1,17 @@
+<body>
+
+Provides the classes and interfaces for a simple master/worker pattern.
+ <p>
+The master thread creates an instance of the pattern, provides work items to be processed,
+and is signaled upon completion.  The master thread may wait for completion (synchronous) or 
+may poll for completion (asynchronous).  
+ <p>
+A master/worker pattern may be static or dynamic.  In a static master/worker, execution
+proceeds in two distinct phases - first all of the work items are submitted and then 
+the workers execute by consuming work items.  Work items may not be submitted once
+execution has begun.  In a dynamic master/worker, submission of work and the execution of
+workers proceeds concurrently.  Furthermore, a worker task may opt to add new work items
+during its execution. 
+
+Warning: This package is for internal use only. The API is not finalized yet.
+</body>

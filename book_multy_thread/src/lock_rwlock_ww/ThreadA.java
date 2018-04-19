@@ -1,0 +1,16 @@
+package lock_rwlock_ww;
+
+public class ThreadA extends Thread {
+
+	private Service service;
+	
+	public ThreadA (Service service) {
+		this.service = service;
+	}
+	
+	@Override
+	public void run() {
+		service.write1();
+	}
+
+}
