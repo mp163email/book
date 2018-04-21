@@ -2,7 +2,7 @@ package no6_deadlock;
 
 /**
  * 死锁
- * 通过jstack 进程号： Found 1 deadlock. 表示死锁构建成功
+ * 通过jstack 进程号,  Found 1 deadlock. 表示死锁构建成功
  * Auth: miaopeng
  * Date: 2018-04-20 16:01:57
  */
