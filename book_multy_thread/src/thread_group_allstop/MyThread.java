@@ -1,6 +1,7 @@
 package thread_group_allstop;
 
 public class MyThread extends Thread {
+
 	public MyThread (ThreadGroup group, String name) {
 		super(group, name);
 	}

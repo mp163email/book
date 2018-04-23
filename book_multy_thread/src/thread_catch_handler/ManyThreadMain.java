@@ -3,7 +3,7 @@ package thread_catch_handler;
 public class ManyThreadMain {
 	public static void main(String[] args) {
 		
-		MyThread.setDefaultUncaughtExceptionHandler(new CaughtExceptionHandler());
+		Thread.setDefaultUncaughtExceptionHandler(new CaughtExceptionHandler());
 		
 		MyThread myThread1 = new MyThread();
 		myThread1.start();
